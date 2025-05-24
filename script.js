@@ -6,27 +6,6 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// 初始化Swiper
-const swiper = new Swiper('.swiper-container', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-});
-
 // 二维码hover效果
 const wechatQR = document.querySelector('.wechat img');
 wechatQR.addEventListener('mouseenter', () => {

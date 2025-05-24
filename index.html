@@ -7,7 +7,6 @@
   <meta name="description" content="微信公众号大模型真好玩的个人空间 - 展示大模型真好玩的作品和经历">
   <title>大模型真好玩的个人空间</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -15,10 +14,12 @@
     <nav>
       <div class="logo">大模型真好玩的个人空间</div>
       <ul class="nav-links">
-        <li><a href="#">首页</a></li>
-        <li><a href="#aboutMe">关于我</a></li>
-        <li><a href="#content">作品集</a></li>
-        <li><a href="#wechat">联系我</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="mcp.html">深入浅出MCP</a></li>
+        <li><a href="llm-finetune.html">大模型微调</a></li>
+        <li><a href="rag.html">RAG知识库</a></li>
+        <li><a href="index.html#aboutMe">关于我</a></li>
+        <li><a href="index.html#wechat">联系我</a></li>
       </ul>
       <div class="hamburger">
         <div class="line"></div>
@@ -30,35 +31,24 @@
 
   <main>
     <a name="content"></a>
-    <section class="banner">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/banner1.png" alt="作品展示1">
-            <div class="caption">
-              <a style="color:white;text-decoration:none;" target="_blank"
-                href="https://blog.csdn.net/weixin_42782643/article/details/145703273?spm=1011.2415.3001.5331">利用ollama搭建本地大模型服务DeepSeek-R1</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/banner2.png" alt="作品展示2">
-            <div class="caption">
-              <a style="color:white;text-decoration:none;" target="_blank"
-                href="https://blog.csdn.net/weixin_42782643/article/details/145663585?spm=1011.2415.3001.5331">大模型“瘦身”指南(微调，量化，蒸馏)</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/banner3.jpg" alt="作品展示3">
-            <div class="caption">
-              <a style="color:white;text-decoration:none;" target="_blank"
-                href="https://blog.csdn.net/weixin_42782643/article/details/145739314">deepseek
-                r1模型太大无法本地部署？我有妙招（非蒸馏版）</a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+    <section class="cards-container">
+      <div class="card">
+        <a href="mcp.html">
+          <img src="assets/banner1.png" alt="深入浅出MCP">
+          <div class="card-title">深入浅出MCP</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="rag.html">
+          <img src="assets/banner2.png" alt="RAG知识库">
+          <div class="card-title">RAG知识库</div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="llm-finetune.html">
+          <img src="assets/banner3.png" alt="大模型微调">
+          <div class="card-title">大模型微调</div>
+        </a>
       </div>
     </section>
 
@@ -86,8 +76,8 @@
       <p>扫码关注我的微信公众号，更多硬核人工智能大模型知识分享</p>
     </div>
     <div class="social">
+      <a href="https://github.com/TangBaron" target="_blank"><img src="assets/social-icons/github.png" alt="GitHub"></a>
       <a href="#"><img src="assets/social-icons/weibo.png" alt="微博"></a>
-      <a href="#"><img src="assets/social-icons/github.png" alt="GitHub"></a>
       <a href="#"><img src="assets/social-icons/linkedin.png" alt="LinkedIn"></a>
     </div>
     <div class="copyright">
@@ -95,7 +85,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
